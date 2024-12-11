@@ -7,7 +7,7 @@ Paper: *Improving Adversarial Transferability of Vision-Language Pre-training Mo
 ## Downloading GloVe Embeddings
 
 To run the code, you need to download the GloVe embeddings file and place it in the main directory. You can download the file from the following link:
-[Download GloVe Embeddings](https://drive.google.com/drive/folders/1djXK_lrFzPuXX7oWevokfjmkQhBFc26W?usp=sharing)
+[Download GloVe Embeddings](https://drive.google.com/drive/folders/1djXK_lrFzPuXX7oWevokfjmkQhBFc26W?usp=sharing) .
 Once downloaded, ensure the file is placed in the root directory of the project.
 
 
