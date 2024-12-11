@@ -14,9 +14,9 @@ Once downloaded, ensure the file is placed in the root directory of the project.
 
 ## About the Implementation
 
-Our code is inspired by the [SGA](https://github.com/Zoky-2020/SGA) method. Since we employ different attack methods, some parts of the original code need to be replaced. Specifically:
+Our code utilizes the evaluation framework from the [SGA](https://github.com/Zoky-2020/SGA) method. To run our code, you need to replace the attack-related components in the SGA code with those from CMI-Attack. Specifically:
 
-#### Original Code
+#### Original Code (SGA)
 ```python
 img_attacker = ImageAttacker(images_normalize, eps=2/255, steps=10, step_size=0.5/255)
 txt_attacker = TextAttacker(ref_model, tokenizer, cls=False, max_length=30, number_perturbation=1,
@@ -24,7 +24,7 @@ txt_attacker = TextAttacker(ref_model, tokenizer, cls=False, max_length=30, numb
 attacker = Attacker(model, img_attacker, txt_attacker)
 ```
 
-#### Updated Code
+#### Updated Code (CMI-Attack)
 ```python
 from CMI_Attack import Attack, CMIAttacker
 
