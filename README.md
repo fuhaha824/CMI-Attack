@@ -4,6 +4,14 @@ The official repository for Collaborative Multimodal Interaction Attack (CMI-Att
 
 Paper: *Improving Adversarial Transferability of Vision-Language Pre-training Models via Collaborative Multimodal Interaction* (https://arxiv.org/abs/2403.10883)
 
+## Downloading GloVe Embeddings
+
+To run the code, you need to download the GloVe embeddings file and place it in the main directory. You can download the file from the following link:
+[Download GloVe Embeddings](https://drive.google.com/drive/folders/1djXK_lrFzPuXX7oWevokfjmkQhBFc26W?usp=sharing)
+Once downloaded, ensure the file is placed in the root directory of the project.
+
+
+
 ## About the Implementation
 
 Our code is inspired by the [SGA](https://github.com/Zoky-2020/SGA) method. Since we employ different attack methods, some parts of the original code need to be replaced. Specifically:
