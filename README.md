@@ -5,7 +5,7 @@ The official repository for Collaborative Multimodal Interaction Attack (CMI-Att
 Paper: *Improving Adversarial Transferability of Vision-Language Pre-training Models via Collaborative Multimodal Interaction* (https://arxiv.org/abs/2403.10883)
 
 <p align="left">
-    <img src="./Imgs/CMI-Attack.png" width=83%\>
+    <img src="./Imgs/CMI-Attack.png" width=100%\>
 </p>
 
 ## Downloading GloVe Embeddings
