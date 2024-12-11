@@ -22,6 +22,8 @@ Our code utilizes the evaluation framework from the [SGA](https://github.com/Zok
 
 #### Original Code (SGA)
 ```python
+from attacker import SGAttacker, ImageAttacker, TextAttacker
+
 img_attacker = ImageAttacker(images_normalize, eps=2/255, steps=10, step_size=0.5/255)
 txt_attacker = TextAttacker(ref_model, tokenizer, cls=False, max_length=30, number_perturbation=1,
                             topk=10, threshold_pred_score=0.3)
@@ -32,9 +34,9 @@ attacker = Attacker(model, img_attacker, txt_attacker)
 ```python
 from CMI_Attack import Attack, CMIAttacker
 
-multi_attacker = CMIAttacker(ref_model, tokenizer, cls=False, max_length=30, number_perturbation=1,
-                             topk=10, threshold_pred_score=0.3, imgs_eps=2/255, step_size=0.5/255)
-attacker = Attack(model, multi_attacker)
+multi_attacker = Attack(ref_model, tokenizer, cls=False, max_length=30, number_perturbation=1,
+                        topk=10, threshold_pred_score=0.3, imgs_eps=2/255, step_size=0.5/255)
+attacker = CMIAttacker(model, multi_attacker)
 ```
 
 ### Notes
