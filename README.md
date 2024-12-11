@@ -32,7 +32,7 @@ attacker = Attacker(model, img_attacker, txt_attacker)
 
 #### Updated Code (CMI-Attack)
 ```python
-from CMI_Attack import Attack, CMIAttacker
+from CMI_Attack import CMIAttacker, Attack
 
 multi_attacker = Attack(ref_model, tokenizer, cls=False, max_length=30, number_perturbation=1,
                         topk=10, threshold_pred_score=0.3, imgs_eps=2/255, step_size=0.5/255)
