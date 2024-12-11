@@ -9,7 +9,7 @@ Paper: *Improving Adversarial Transferability of Vision-Language Pre-training Mo
 ## Citation
 If you find our paper interesting or helpful to your research, please consider citing it, and feel free to contact fujy23@m.fudan.edu.cn if you have any questions.
 ```
-@misc{fu2024CMI,
+@misc{fu2024cmi,
       title={Improving Adversarial Transferability of Vision-Language Pre-training Models through Collaborative Multimodal Interaction}, 
       author={Jiyuan Fu and Zhaoyu Chen and Kaixun Jiang and Haijing Guo and Jiafeng Wang and Shuyong Gao and Wenqiang Zhang},
       year={2024},
