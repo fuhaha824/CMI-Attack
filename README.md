@@ -4,6 +4,10 @@ The official repository for Collaborative Multimodal Interaction Attack (CMI-Att
 
 Paper: *Improving Adversarial Transferability of Vision-Language Pre-training Models via Collaborative Multimodal Interaction* (https://arxiv.org/abs/2403.10883)
 
+<p align="left">
+    <img src="./Imgs/CMI-Attack.png" width=83%\>
+</p>
+
 ## Downloading GloVe Embeddings
 
 To run the code, you need to download the GloVe embeddings file and place it in the main directory. You can download the file from the following link:
