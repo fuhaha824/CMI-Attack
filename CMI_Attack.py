@@ -79,7 +79,7 @@ class Attack():
 
         imgs_0 = imgs.detach() + torch.from_numpy(np.random.uniform(-self.imgs_eps, self.imgs_eps, imgs.shape)).float().to(device)
         imgs_0 = torch.clamp(imgs_0, 0.0, 1.0)
-        scaled_imgs = self.get_scaled_imgs(imgs_0, scales, device)     
+             
 
         for _ in range(steps):
             final_adverse = []
@@ -165,6 +165,7 @@ class Attack():
             txts_input = self.tokenizer(final_adverse, padding='max_length', truncation=True, max_length=self.max_length, return_tensors="pt").to(device)
             txts_output = net.inference_text(txts_input)
             txt_supervisions = txts_output['text_feat']
+            scaled_imgs = self.get_scaled_imgs(imgs_0, scales, device)
             imgs_output = net.inference_image(images_normalize(scaled_imgs))
             imgs_embeds = imgs_output['image_feat']
             with torch.enable_grad():
